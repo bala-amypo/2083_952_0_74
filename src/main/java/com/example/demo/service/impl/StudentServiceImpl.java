@@ -1,7 +1,10 @@
 package com.example.demo.service.impl;
-@Service
-public class StudentServiceImpl{
 
+import org.springframework.stereotype.Service;
+import com.example.demo.service.StudentService;
+@Service
+public class StudentServiceImpl implements StudentService {
+    
 }
 
 
