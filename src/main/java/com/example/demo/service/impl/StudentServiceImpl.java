@@ -4,7 +4,7 @@ import com.example.demo.repository.StudentRepository;
 import org.springframework.stereotype.Service;
 import com.example.demo.service.StudentService;
 import com.example.demo.entity.Student;
-import 
+import org.springframework.beans.factory.annotation.Autowired;
 @Service
 public class StudentServiceImpl implements StudentService {
     @Autowired
