@@ -1,5 +1,5 @@
 package com.example.demo.service.impl;
-
+import java.util.List;
 import com.example.demo.repository.StudentRepository;
 import org.springframework.stereotype.Service;
 import com.example.demo.service.StudentService;
@@ -15,7 +15,7 @@ public class StudentServiceImpl implements StudentService {
     }
     @Override
     public List<Student> getAllStudent(){
-
+        return stdrepo.findAll();
     }
 }
 
