@@ -32,7 +32,12 @@ public class StudentServiceImpl implements StudentService {
     public String updateDate(Long id,String st){
         boolean status=stdrepo.existsById(id){
             if(status){
-                
+                st.setId(id);
+                stdrepo.save(st);
+                return "Student updated successfully";
+            }
+            else{
+                return "Student with ID" +
             }
         }
     }
