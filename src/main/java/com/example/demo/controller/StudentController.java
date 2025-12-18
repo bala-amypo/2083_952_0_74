@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import com.example.demo.service.StudentService;
 import com.example.demo.entity.Student;
+import java.util.*;
 @RestController
 public class StudentController{
     @Autowired
@@ -18,9 +19,4 @@ public class StudentController{
 public List<Student> get(){
     return stdser.getAllStudent();
 }
-    @GetMapping("/getByid/{id}")
-    public Optional<Student> getId(@Parthvariable int id){
-        return 
-    }
-
 }
