@@ -7,17 +7,19 @@ import com.example.demo.entity.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.beans.factory.annotation.*;
-
 @Service
 public class StudentServiceImpl implements StudentService {
+
     @Autowired
     StudentRepository stdrepo;
+
     @Override
     public Student poststudent(Student st){
         return stdrepo.save(st);
     }
+
     @Override
-    public List<Student> getAllStudent(){
+    public List<Student> getAllStudents(){
         return stdrepo.findAll();
     }
 
@@ -26,5 +28,3 @@ public class StudentServiceImpl implements StudentService {
         return stdrepo.findById(id);
     }
 }
-
-
