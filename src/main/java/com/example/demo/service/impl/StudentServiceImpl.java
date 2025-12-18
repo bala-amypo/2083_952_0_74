@@ -29,5 +29,11 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public String updateDate(Long id,)
+    public String updateDate(Long id,String st){
+        boolean status=stdrepo.existsById(id){
+            if(status){
+                
+            }
+        }
+    }
 }
