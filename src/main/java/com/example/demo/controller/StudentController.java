@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.GetMapping;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,7 +17,7 @@ public class StudentController{
         return stdser.poststudent(st);
     }
     @GetMapping("/getall")
-public List<Student> get(){
+public List<Student> getAllStudent(){
     return stdser.getAllStudent();
 }
 }
