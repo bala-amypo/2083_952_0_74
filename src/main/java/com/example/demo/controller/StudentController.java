@@ -23,4 +23,7 @@ public class StudentController {
     public List<Student> getAllStudent(){
         return stdser.getAllStudents();
     }
+
+    @PutMapping("/update/{id}")
+    public String update
 }
